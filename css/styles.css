@@ -184,13 +184,23 @@ button {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people_office.jpg);
+        url(../images/bg_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
     background-size: cover;
     margin: 0 auto;
    
+}
+@media screen and (min-resolution: 2dppx) {
+
+    .main-container-head {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/back_mob_2x.jpg);
+
+    }
 }
 
 
@@ -252,7 +262,17 @@ button {
             /* padding-left: 136px;
             padding-right: 136px; */
         }
+       
+        @media screen and (min-resolution: 2dppx) {
     
+            .main-container-head {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/back_tab_2x.jpg);
+
+        }
+    }
     
         .main-header {
             font-weight: 700;
@@ -264,8 +284,9 @@ button {
         }
 }
 
-@media screen and (min-width: 1158px) {
-.main-container-head {
+@media screen and (min-width: 1158px) 
+{
+    .main-container-head {
     padding-top: 188px;
     padding-bottom: 188px; 
     background-image: linear-gradient(to bottom,
@@ -273,16 +294,28 @@ button {
                     rgba(46, 47, 66, 0.7)),
                 url(../images/people_office.jpg);
     margin: 0 auto;
-}
-.main-container-head> .container {
-    padding: 0;
-}
+    }
 
-.main-header {
+    @media screen and (min-resolution: 2dppx) {
+
+    .main-container-head {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people_office_2x.jpg);
+
+    }
+    }
+
+    .main-container-head> .container {
+    padding: 0;
+    }
+
+    .main-header {
    margin-bottom: 48px; 
    max-width: 496px;
   
-}
+    }
 }
 
 /* ----------------------Section 2------------------- */
