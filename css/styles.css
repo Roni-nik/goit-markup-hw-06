@@ -172,11 +172,15 @@ button {
 
 /* -------------------------1 SECTION------------------------------------- */
 
-/* 
+
 .main-container-head {
+  
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -186,18 +190,25 @@ button {
     max-width: 1440px;
     background-size: cover;
     margin: 0 auto;
+   
 }
 
 
 .main-header {
-    margin: 0 auto;
-    font-size: 56px;
-    line-height: 1.07;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        
+  margin: 0 auto;
+    /* font-size: 56px; */
+    /* line-height: 1.07; */
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
-    margin-bottom: 48px;
+    max-width: 216px;
+    /* max-width: 496px; */
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
 }
 
 
@@ -225,8 +236,54 @@ button {
 
 .main-button:focus {
     background-color: #404BBF;
-} */
+}
 
+
+/* ------------------Media------------------------------ */
+@media screen and (min-width: 768px) {
+    .main-container-head {
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/bg_tab.jpg);
+        
+        padding-top: 112px;
+            padding-bottom: 112px;
+            /* padding-left: 136px;
+            padding-right: 136px; */
+        }
+    
+    
+        .main-header {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            max-width: 496px;
+            margin-bottom: 36px;
+           
+        }
+}
+
+@media screen and (min-width: 1158px) {
+.main-container-head {
+    padding-top: 188px;
+    padding-bottom: 188px; 
+    background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/people_office.jpg);
+    margin: 0 auto;
+}
+.main-container-head> .container {
+    padding: 0;
+}
+
+.main-header {
+   margin-bottom: 48px; 
+   max-width: 496px;
+  
+}
+}
 
 /* ----------------------Section 2------------------- */
 .main-page-descr {
@@ -373,8 +430,9 @@ button {
 }
 
 .team-container {
-    max-width: 768px;
+    /* max-width: 768px; */
     padding: 0;
+    /* margin: 0 auto; */
 }
 
 .main-team-header {
@@ -699,6 +757,7 @@ button {
     background: #2e2f42;
     padding: 96px 0;
    display: flex;
+   
  
 }
 
@@ -847,7 +906,7 @@ address {
       padding-left: 16px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       color: #ffffff;
-        opacity: 0.3;
+        opacity: 0.6;
   }
 
   .input-footer::placeholder {
@@ -857,7 +916,6 @@ address {
       letter-spacing: 0.04em;
       color #fff;
     padding-left: 0px;
-
 
     opacity: 0.6;
   }
@@ -950,7 +1008,7 @@ address {
         justify-content: space-between;
        
         padding: 0;
-        margin: 0;
+      
     }
 
  .footer-dscr-logo {
@@ -998,6 +1056,7 @@ address {
     .input-footer {
        
         width: 264px;
+        opacity: 1;
        
     }
 
@@ -1005,7 +1064,7 @@ address {
 
     .input-footer::placeholder {
         color #fff;
-        /* opacity: unset; */
+    opacity: 1;
 
     }
 
