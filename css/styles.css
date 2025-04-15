@@ -54,7 +54,7 @@ button {
 
 
 /* ---------------HEADER----------------------------- */
-/* 
+
 
 
 .header {
@@ -62,6 +62,10 @@ button {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #e7e9fc;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
 }
 
 .header .container {
@@ -71,18 +75,21 @@ button {
 }
 
 .nav-link {
-    display: flex;
+
+    display: flex; 
     margin-right: auto;
     align-items: center;
 }
 
 .nav-link-menu {
-    display: flex;
+    display: none;
+    /* display: flex; */
     gap: 40px;
 }
 
 .nav-contacts-menu {
-    display: flex;
+    display: none;
+    /* display: flex; */
     gap: 40px;
 }
 
@@ -167,9 +174,230 @@ button {
 
 .nav-links-contacts:focus {
     color: #404bbf;
+} 
+
+
+
+
+/* --------------Media-------------- */
+
+
+
+.mob-menu-open {
+    display: block;
+    margin-left: auto;
+    border: none;
+   background-color:transparent;
+
+}
+.mob-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    padding-right: 24px;
+    padding-left: 16px;
+    padding-bottom: 40px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
+
+.mob-menu .is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+        .btn-close-mob {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #e7e9fc;
+            border-radius: 50%;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+             stroke-width: 1px;
+        }
+
+.btn-close {
+fill: #2e2f42;
+
+} 
+ 
+.mob-nav-link-menu {
+display: flex;
+flex-direction: column;
+gap: 40px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.mob-main-nav-link {
+    display: block;
+        color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        text-decoration: none;
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+}
+
+.mob-main-nav-link:hover,
+.mob-main-nav-link:focus {
+    color: #404bbf;
+}
+
+
+
+.mob-nav-contacts {}
+
+.mob-nav-contacts-menu {
+    display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-nav-links-contacts {
+
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+/* .mob-icon-team-links {
+    display: flex;
+        flex-direction: column;
+        gap: 40px; 
 } */
 
+.mob-icon-menu {
+   justify-content: left;
+    display: flex;
+     gap: 24px;
+     
+}
 
+
+.mob-nav-links-contacts:hover {
+    color: #404bbf;
+}
+
+.mob-nav-links-contacts:focus {
+    color: #404bbf;
+}
+
+
+/* --------------------Media-Tab-Desk------------------------ */
+
+@media screen and (min-width: 768px) {
+.mob-menu-open {
+    display: none;
+}
+.header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-bottom: 1px solid #e7e9fc;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header .container {
+    margin: 0;
+  
+}
+
+.nav-link-menu {
+    display: flex;
+    gap: 40px;
+    margin-right: 122px;
+}
+
+.nav-contacts-menu {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.logo {
+   
+    margin-right: 120px;
+    
+
+}
+
+
+
+
+.nav-links-contacts {
+    font-size: 12px;
+    line-height: 1.17;
+    
+}
+
+
+
+
+}
+
+@media screen and (min-width: 1158px) {
+.header {
+    
+        padding-right: 156px;
+         padding-left: 156px;
+        padding-top: 24px;
+        padding-bottom: 0; 
+
+    }
+
+.header .container {
+    margin: 0;
+    padding: 0;
+}
+    .nav-link-menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav-contacts-menu {
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+    }
+
+    .logo {
+     
+        margin-right: 76px;
+    }
+
+    .nav-links-contacts {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
 /* -------------------------1 SECTION------------------------------------- */
 
 
@@ -192,7 +420,9 @@ button {
     margin: 0 auto;
    
 }
-@media screen and (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx),
+(min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
 
     .main-container-head {
         background-image: linear-gradient(to bottom,
@@ -263,7 +493,9 @@ button {
             padding-right: 136px; */
         }
        
-        @media screen and (min-resolution: 2dppx) {
+        @media screen and (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (-webkit-min-device-pixel-ratio: 2) {
     
             .main-container-head {
         background-image: linear-gradient(to bottom,
@@ -296,7 +528,9 @@ button {
     margin: 0 auto;
     }
 
-    @media screen and (min-resolution: 2dppx) {
+    @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
 
     .main-container-head {
         background-image: linear-gradient(to bottom,
@@ -1107,15 +1341,6 @@ address {
 }
 
 
-/* ----------------------Footer5--------------- */
-
-
-
-
-
-
-
-
 .form-modal {
     align-items: start;
     gap: 24px;
@@ -1152,18 +1377,20 @@ address {
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
         position: absolute;
         top: 50%;
         left: 50%;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translate(-50%, -50%);
-        width: 408px;
-        min-height: 584px;
+        width: 288px;
+        min-height: 623px;
+      padding: 72px 16px 16px 16px;
+
 } 
 
 .modal-btn {
     display: flex;
+   
         position: absolute;
         top: 24px;
         right: 24px;
@@ -1177,7 +1404,8 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         align-items: center;
         justify-content: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+    }
 
 .modal-icon {
     fill: #2e2f42;
@@ -1192,15 +1420,24 @@ font-weight: 500;
     text-align: center;
     color: #2e2f42;
     margin-bottom: 16px;
+
 }
+
+.name-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
 
 .modal-container {
     position: relative;
     display: inline-block;
     width: 100%;
-
-
-   
 }
 .input-modal {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1232,16 +1469,6 @@ font-weight: 500;
 
 margin-bottom: 8px;
 
-}
-
-.name-style {
-font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    display: block;
-    margin-bottom: 4px;
 }
 
 .form-modal {
@@ -1281,6 +1508,7 @@ font-weight: 400;
             background-color: transparent;
             outline: transparent;
             resize: none;
+            opacity: 0.5;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1303,6 +1531,7 @@ font-weight: 400;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
+        text-align: start;
        
         }
 
@@ -1320,8 +1549,8 @@ font-weight: 400;
 }
 
 .checkbox-link {
-    line-height: 16px;
-    line-height: 1.33333;
+   
+    line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
@@ -1336,7 +1565,6 @@ font-weight: 400;
 
 .button-modal {
        margin-top: 24px;
-   margin-left: 95px;
         min-width: 169px;
         display: block;
         min-height: 56px;
@@ -1352,7 +1580,9 @@ font-weight: 400;
           border: none;
            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+margin: 0 auto;
+
+        }
 .button-modal:hover {
     background-color: #404bbf;
 }
@@ -1445,3 +1675,20 @@ border: none;
 .container-comment {
     margin-bottom: 16px
 }
+
+
+
+/* ---------------Modal for modal  768-1158--------------------- */
+ @media screen and (min-width: 768px) {
+
+ .modal {
+
+    padding: 72px 24px 24px 24px;
+       
+        width: 408px;
+        min-height: 584px;
+} 
+
+ }
+
+ 
