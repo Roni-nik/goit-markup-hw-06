@@ -1037,8 +1037,7 @@ text-align: center;
     background: #2e2f42;
     padding: 96px 0;
    display: flex;
-   
- 
+
 }
 
 .footer-container {
@@ -1084,6 +1083,7 @@ text-align: center;
 }
 .footer-social-media {
     margin: 0 auto;
+    margin-top: 72px;
 }
 
 .footer-social {
@@ -1230,7 +1230,7 @@ address {
   @media screen and (min-width: 768px) {
 
     .main-page-footer {
-    padding-left: 108px;
+    /* padding-left: 108px; */
     }
 
     .container .footer-container {
@@ -1250,6 +1250,7 @@ address {
     
     .footer-social-media {
          margin-left: 24px;
+         margin-top: 0;
     } 
 
     .footer-social {
@@ -1277,8 +1278,8 @@ address {
   @media screen and (min-width: 1158px) {
 .main-page-footer {
         padding: 100px 0;
-        padding-left: 156px;
-        padding-right: 159px;
+        /* padding-left: 156px;
+        padding-right: 159px; */
         display: flex;
     }
 
