@@ -95,6 +95,7 @@ button {
     gap: 40px;
 }
 
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -293,7 +294,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
 .mob-icon-menu {
-   justify-content: left;
+   /* justify-content: left; */
     display: flex;
      gap: 24px;
      
@@ -327,13 +328,14 @@ padding: 0;
 
 .header .container {
     margin: 0 auto;
+    padding: 0 16px;
   
 }
 
 .nav-link-menu {
     display: flex;
     gap: 40px;
-    margin-right: 122px;
+    
 }
 
 .nav-contacts-menu {
@@ -342,13 +344,9 @@ padding: 0;
     flex-direction: column;
 }
 
-.logo {
-   
+.logo-for-tab{
     margin-right: 120px;
-    
-
 }
-
 
 
 
@@ -375,14 +373,18 @@ margin: 0 auto;
 
 .header .container {
     margin: 0 auto;
-    padding: 0;
+    /* padding: 0; */
     justify-content: space-between;
+}
+
+.logo-for-tab {
+    margin-right: 76px;
 }
     .nav-link-menu {
         display: flex;
         justify-content: space-between;
         gap: 40px;
-        margin: 0;
+        /* margin: 0; */
     }
 
     .nav-contacts-menu {
@@ -391,10 +393,7 @@ margin: 0 auto;
         flex-direction: row;
     }
 
-    .logo {
-     
-        margin-right: 76px;
-    }
+  
 
     .nav-links-contacts {
         font-weight: 400;
@@ -704,7 +703,7 @@ margin: 0 auto;
     
 }
 
-.team-container {
+.container .team-container {
     /* max-width: 768px; */
     padding: 0;
    
@@ -813,7 +812,7 @@ text-align: center;
 
     .team-container {
     
-        padding: 0;
+        padding: 0 16px;
     }
 
     .main-team-header {
@@ -1045,7 +1044,7 @@ text-align: center;
     flex-wrap: wrap;
     align-items: baseline;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
 }
 
@@ -1082,7 +1081,7 @@ text-align: center;
  
 }
 .footer-social-media {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 72px;
 }
 
@@ -1288,7 +1287,7 @@ address {
         flex-wrap: nowrap;
         justify-content: space-between;
        
-        padding: 0;
+        padding: 0 16px;
       
     }
 
