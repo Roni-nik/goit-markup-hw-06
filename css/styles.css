@@ -1045,7 +1045,7 @@ text-align: center;
     flex-wrap: wrap;
     align-items: baseline;
     flex-direction: row;
-    justify-content: center;
+   padding-left: 108px;
     
 }
 
